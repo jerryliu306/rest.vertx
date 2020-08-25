@@ -58,7 +58,7 @@
         <version.zandero.http>[1.2.4,)</version.zandero.http>
         <version.zandero.utils.junit>[1.0.1,)</version.zandero.utils.junit>
 
-        <version.vertx>3.9.1</version.vertx>
+        <version.vertx>4.0.0-milestone5</version.vertx>
         <version.servlet-api>4.0.1</version.servlet-api>
 
         <!-- logging -->
@@ -90,12 +90,12 @@
             <groupId>com.zandero</groupId>
             <artifactId>utils.extra</artifactId>
             <version>${version.zandero.utils.extra}</version>
-            <exclusions>
-                <exclusion> <!-- exclude as it is already provided by vert.x -->
+            <!--<exclusions>
+                <exclusion> &lt;!&ndash; exclude as it is already provided by vert.x &ndash;&gt;
                     <groupId>com.fasterxml.jackson.core</groupId>
                     <artifactId>jackson-databind</artifactId>
                 </exclusion>
-            </exclusions>
+            </exclusions>-->
         </dependency>
 
         <dependency>
@@ -107,6 +107,12 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web</artifactId>
+            <version>${version.vertx}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-auth-common</artifactId>
             <version>${version.vertx}</version>
         </dependency>
 
